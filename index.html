@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="FQHC Tools">
+<meta name="theme-color" content="#f5f5f7">
+<title>FQHC Clinical Tools</title>
+<style>
+:root{
+  --bg:#f5f5f7;--surface:#fff;--border:#d8d8d8;
+  --text:#1a1a1a;--muted:#666;--hint:#999;
+  --blue:#1550b0;--blue-bg:#edf2ff;
+  --green:#1a6e3c;--green-bg:#eaf5ee;
+  --teal:#0a6060;--teal-bg:#e3f5f5;
+  --amber:#7a4f00;--amber-bg:#fff5df;
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{min-height:100%;background:var(--bg);font-family:-apple-system,'SF Pro Text','Helvetica Neue',sans-serif;color:var(--text);}
+
+.header{padding:48px 20px 24px;text-align:center;}
+.header-label{font-size:11px;font-weight:700;color:var(--hint);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;}
+.header-title{font-size:28px;font-weight:800;color:var(--text);margin-bottom:6px;letter-spacing:-.02em;}
+.header-sub{font-size:13px;color:var(--muted);line-height:1.5;}
+
+.section{padding:0 16px;margin-bottom:28px;}
+.section-label{font-size:11px;font-weight:700;color:var(--hint);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding-left:4px;}
+
+.tool-card{background:var(--surface);border-radius:var(--r);border:0.5px solid var(--border);padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:16px;text-decoration:none;color:inherit;transition:opacity .15s;}
+.tool-card:active{opacity:.75;}
+.tool-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.tool-body{flex:1;}
+.tool-name{font-size:16px;font-weight:700;margin-bottom:2px;}
+.tool-desc{font-size:12px;color:var(--muted);line-height:1.4;}
+.tool-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;display:inline-block;margin-top:5px;text-transform:uppercase;letter-spacing:.04em;}
+.tool-arrow{font-size:18px;color:var(--border);flex-shrink:0;}
+
+.coming-card{background:var(--surface);border-radius:var(--r);border:0.5px solid var(--border);padding:16px 18px;margin-bottom:10px;display:flex;align-items:center;gap:16px;opacity:.5;}
+
+.footer{text-align:center;padding:16px 20px 40px;font-size:11px;color:var(--hint);line-height:1.6;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">Clinical Decision Support</div>
+  <div class="header-title">FQHC Tools</div>
+  <div class="header-sub">Point-of-care reference tools for<br>Asian immigrant &amp; underserved populations</div>
+</div>
+
+<div class="section">
+  <div class="section-label">Cardiovascular</div>
+
+  <a class="tool-card" href="PREVENT_Rx.html">
+    <div class="tool-icon" style="background:var(--blue-bg);">❤️</div>
+    <div class="tool-body">
+      <div class="tool-name">PREVENT Rx</div>
+      <div class="tool-desc">AHA PREVENT calculator + 2026 ACC/AHA dyslipidemia cheat sheet. Includes Asian-specific statin dosing &amp; Medi-Cal notes.</div>
+      <span class="tool-badge" style="background:var(--blue-bg);color:var(--blue);">2026 ACC/AHA</span>
+    </div>
+    <div class="tool-arrow">›</div>
+  </a>
+
+</div>
+
+<div class="section">
+  <div class="section-label">Coming soon</div>
+
+  <div class="coming-card">
+    <div class="tool-icon" style="background:var(--green-bg);">🦴</div>
+    <div class="tool-body">
+      <div class="tool-name">FRAX</div>
+      <div class="tool-desc">Fracture risk calculator with Asian BMI adjustments</div>
+      <span class="tool-badge" style="background:var(--green-bg);color:var(--green);">In development</span>
+    </div>
+  </div>
+
+  <div class="coming-card">
+    <div class="tool-icon" style="background:var(--teal-bg);">🧠</div>
+    <div class="tool-body">
+      <div class="tool-name">PHQ-9 / GAD-7</div>
+      <div class="tool-desc">Depression &amp; anxiety screening with cultural context</div>
+      <span class="tool-badge" style="background:var(--teal-bg);color:var(--teal);">In development</span>
+    </div>
+  </div>
+
+  <div class="coming-card">
+    <div class="tool-icon" style="background:var(--amber-bg);">💊</div>
+    <div class="tool-body">
+      <div class="tool-name">Diabetes Rx</div>
+      <div class="tool-desc">ADA standards + GLP-1/SGLT2 selection guide for CKM</div>
+      <span class="tool-badge" style="background:var(--amber-bg);color:var(--amber);">In development</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  For clinical reference only · Not a substitute for clinical judgment<br>
+  Sources cited within each tool
+</div>
+
+</body>
+</html>
